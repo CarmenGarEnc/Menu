@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="561.0" prefWidth="714.0" spacing="20.0" styleClass="fondo" stylesheets="@../../../Css/css.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.menu.menu.MenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="601.0" prefWidth="754.0" stylesheets="@../../../Css/css.css">
+         <children>
+            <Label layoutX="43.0" layoutY="18.0" text="Menú Hamburguesa (a partir de 8 euros)" textAlignment="CENTER" textFill="#8d3916">
+               <font>
+                  <Font name="Bauhaus 93" size="36.0" />
+               </font>
+            </Label>
+            <Separator layoutX="13.0" layoutY="62.0" prefHeight="20.0" prefWidth="701.0" />
+            <RadioButton fx:id="rbPollo" layoutX="44.0" layoutY="117.0" mnemonicParsing="false" text="Pollo" textFill="#653210">
+               <toggleGroup>
+                  <ToggleGroup fx:id="hamburguesa" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="43.0" layoutY="82.0" text="Hamburguesa" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="82.0" text="Pan" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="564.0" layoutY="82.0" text="Patatas" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbCerdo" layoutX="43.0" layoutY="143.0" mnemonicParsing="false" text="Cerdo" textFill="#653210" toggleGroup="$hamburguesa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbTernera" layoutX="44.0" layoutY="169.0" mnemonicParsing="false" text="Ternera (+1€)" textFill="#653210" toggleGroup="$hamburguesa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbVegana" layoutX="44.0" layoutY="195.0" mnemonicParsing="false" text="Vegana (+1€)" textFill="#653210" toggleGroup="$hamburguesa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbNormal" layoutX="310.0" layoutY="113.0" mnemonicParsing="false" text="Normal" textFill="#653210">
+               <toggleGroup>
+                  <ToggleGroup fx:id="pan" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbIntegral" layoutX="309.0" layoutY="139.0" mnemonicParsing="false" text="Integral" textFill="#653210" toggleGroup="$pan">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbCenteno" layoutX="310.0" layoutY="165.0" mnemonicParsing="false" text="Centeno" textFill="#653210" toggleGroup="$pan">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbFritas" layoutX="565.0" layoutY="112.0" mnemonicParsing="false" text="Fritas" textFill="#653210">
+               <toggleGroup>
+                  <ToggleGroup fx:id="patatas" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbGajo" layoutX="564.0" layoutY="138.0" mnemonicParsing="false" text="Gajo" textFill="#653210" toggleGroup="$patatas">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbCaseras" layoutX="565.0" layoutY="164.0" mnemonicParsing="false" text="Caseras (+1€)" textFill="#653210" toggleGroup="$patatas">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <Separator layoutX="23.0" layoutY="231.0" prefHeight="20.0" prefWidth="701.0" />
+            <Separator layoutX="23.0" layoutY="286.0" prefHeight="20.0" prefWidth="701.0" />
+            <Separator layoutX="23.0" layoutY="424.0" prefHeight="20.0" prefWidth="701.0" />
+            <Separator layoutX="23.0" layoutY="459.0" prefHeight="20.0" prefWidth="701.0" />
+            <RadioButton fx:id="rbCola" layoutX="43.0" layoutY="269.0" mnemonicParsing="false" text="Cola" textFill="#653210">
+               <toggleGroup>
+                  <ToggleGroup fx:id="bebida" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="44.0" layoutY="244.0" text="Bebida" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbNaranja" layoutX="170.0" layoutY="269.0" mnemonicParsing="false" text="Naranja" textFill="#653210" toggleGroup="$bebida">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbLimon" layoutX="309.0" layoutY="269.0" mnemonicParsing="false" text="Limón" textFill="#653210" toggleGroup="$bebida">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbAgua" layoutX="441.0" layoutY="269.0" mnemonicParsing="false" text="Agua" textFill="#653210" toggleGroup="$bebida">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="rbCerveza" layoutX="565.0" layoutY="269.0" mnemonicParsing="false" text="Cerveza (+18 años)" textFill="#653210" toggleGroup="$bebida">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></RadioButton>
+            <Label layoutX="38.0" layoutY="300.0" text="Hamburguesa" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="510.0" layoutY="300.0" text="Salsas (+0.50)" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="cbHambDoble" layoutX="36.0" layoutY="328.0" mnemonicParsing="false" text="Hamburguesa Doble (+2€)" textFill="#653210">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="cbExQue" layoutX="36.0" layoutY="360.0" mnemonicParsing="false" text="Extra de Queso (+0.5€)" textFill="#653210">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></CheckBox>
+            <CheckBox fx:id="cbExpa" layoutX="36.0" layoutY="391.0" mnemonicParsing="false" text="Extra de patatas (+1€)" textFill="#653210">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></CheckBox>
+            <Label layoutX="513.0" layoutY="340.0" text="Ketchup" textFill="#653210">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="512.0" layoutY="372.0" text="Mostaza" textFill="#653210">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="511.0" layoutY="403.0" text="Barbacoa" textFill="#653210">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <RadioButton fx:id="rbDomicilio" layoutX="38.0" layoutY="443.0" mnemonicParsing="false" text="Reparto Domicilio" textFill="#653210">
+               <toggleGroup>
+                  <ToggleGroup fx:id="entrega" />
+               </toggleGroup>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbRecoger" layoutX="523.0" layoutY="443.0" mnemonicParsing="false" text="Recogida Local (20% desc.)" textFill="#653210" toggleGroup="$entrega">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </RadioButton>
+            <TextField fx:id="txtprecio" alignment="CENTER" layoutX="371.0" layoutY="567.0" prefHeight="36.0" prefWidth="77.0">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="txtiva" alignment="CENTER" layoutX="473.0" layoutY="567.0" prefHeight="36.0" prefWidth="77.0">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></TextField>
+            <TextField fx:id="txtPVP" alignment="CENTER" layoutX="570.0" layoutY="567.0" prefHeight="36.0" prefWidth="109.0">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></TextField>
+            <Label layoutX="380.0" layoutY="549.0" text="PRECIO" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></Label>
+            <Label layoutX="498.0" layoutY="549.0" text="IVA" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></Label>
+            <Label layoutX="606.0" layoutY="549.0" text="PVP" textFill="#653210">
+               <font>
+                  <Font name="Bauhaus 93" size="18.0" />
+               </font></Label>
+            <Button fx:id="btcalcular" layoutX="36.0" layoutY="547.0" mnemonicParsing="false" onAction="#calcular" prefHeight="53.0" prefWidth="179.0" text="CALCULAR" textFill="#8d3916">
+               <font>
+                  <Font name="Bauhaus 93" size="30.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="combKetchup" layoutX="571.0" layoutY="336.0" prefHeight="25.0" prefWidth="53.0" />
+            <ChoiceBox fx:id="combBarbacoa" layoutX="570.0" layoutY="399.0" prefHeight="25.0" prefWidth="53.0" />
+            <ChoiceBox fx:id="combMostaza" layoutX="571.0" layoutY="368.0" prefHeight="25.0" prefWidth="53.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

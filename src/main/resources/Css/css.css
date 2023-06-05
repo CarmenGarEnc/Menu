@@ -1,0 +1,11 @@
+.fondo{
+    -fx-background-image: url(./fondo.jpg);
+    -fx-background-size: 750 650;
+    -fx-background-repeat: no-repeat;
+
+}
+.boton{
+    -fx-background-color: grey;
+    -fx-font-family: Arial;
+    -fx-font-size: 15;
+}
