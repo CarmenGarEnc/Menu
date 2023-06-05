@@ -1,3 +1,3 @@
 # Menu
-Aplicación del cáculo de un menú de hamburguesa.
+Aplicación del cálculo de un menú de hamburguesa.
 
